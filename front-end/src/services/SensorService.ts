@@ -57,7 +57,7 @@ class SensorService {
   // ----------------HUMIDADE-------------------
   async getHumidade() {
     try {
-      const response = await axios.get(`${baseUrl}/humidade/list`);
+      const response = await axios.get(`${baseUrl}/umidade/list`);
       return response.data;
     } catch (error) {
       console.error(error);
@@ -67,7 +67,7 @@ class SensorService {
 
   async getHumidadePaginated(page: number, limit: number) {
     try {
-      const response = await axios.get(`${baseUrl}/humidade?page=${page}&limit=${limit}`);
+      const response = await axios.get(`${baseUrl}/umidade?page=${page}&limit=${limit}`);
       return response.data;
     } catch (error) {
       console.error(error);
@@ -77,7 +77,7 @@ class SensorService {
 
   async getHumidadeById(id: number) {
     try {
-      const response = await axios.get(`${baseUrl}/humidade/${id}`);
+      const response = await axios.get(`${baseUrl}/umidade/${id}`);
       return response.data;
     } catch (error) {
       console.error(error);
@@ -87,7 +87,7 @@ class SensorService {
 
   async insertHumidade(sensor: TemperaturaInterface) {
     try {
-      const response = await axios.post(`${baseUrl}/humidade`, sensor);
+      const response = await axios.post(`${baseUrl}/umidade`, sensor);
       return response.data;
     } catch (error) {
       console.error(error);
@@ -97,7 +97,7 @@ class SensorService {
 
   async deleteHumidadeById(id: number) {
     try {
-      const response = await axios.delete(`${baseUrl}/humidade/${id}`);
+      const response = await axios.delete(`${baseUrl}/umidade/${id}`);
       return response.data;
     } catch (error) {
       console.error(error);
