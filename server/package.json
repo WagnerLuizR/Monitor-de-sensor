@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate:create": "sequelize migration:create",
+    "migrate:run": "sequelize db:migrate",
+    "migrate": "npm run migrate:create && npm run migrate:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "vue3-pagination": "^1.0.16"
+  },
+  "devDependencies": {
+    "migrate-mysql": "^0.4.0",
+    "sequelize": "^6.29.3"
+  }
+}
