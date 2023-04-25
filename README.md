@@ -1,6 +1,6 @@
 ## Monitor-de-sensor
 
-### Como rodar o back-end?
+### Como rodar o back-end:
 
 - Acessar o local do server: `cd /server`
 - Instalar as bibliotecas: `npm i`
@@ -11,7 +11,7 @@
 -  Inicializar o servidor: `node .\controller\index.js`
   
 
-### Rodar o font-end:
+### Como rodar o font-end:
 
 - Acessar o local do front: `cd /front-end`
 - Instalar bibliotecas: `npm i`
