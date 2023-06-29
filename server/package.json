@@ -7,6 +7,7 @@
     "migrate:create": "sequelize migration:create",
     "migrate:run": "sequelize db:migrate",
     "migrate": "npm run migrate:create && npm run migrate:run"
+    "start": "node /controller/index.js"
   },
   "author": "",
   "license": "ISC",
